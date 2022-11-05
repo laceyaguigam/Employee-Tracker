@@ -7,6 +7,7 @@ Create a command-line application that allows a company to manage it's employee 
 
 -MySQL
 -JSON
+-JavaScript
 
 # Website
 
