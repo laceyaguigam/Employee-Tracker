@@ -18,7 +18,7 @@ const db = mysql.createConnection(
 db.connect((err)=> {
   if (err) throw err;
   else {
-    start()
+    start();
   }
 })
 // GIVEN a command-line application that accepts user input
@@ -31,7 +31,7 @@ inquirer.prompt([
   if(answer.whattodo === "view all departments") {
  db.query(`SELECT * FROM department`, (err, result) => {
       console.table(result)
-      start()
+      start();
     })
 
   } 
@@ -39,14 +39,14 @@ inquirer.prompt([
     console.log(answer.whattodo)
     db.query(`SELECT * FROM role`, (err, result) => {
       console.table(result)
-      start()
+      start();
     })
   }
   else if (answer.whattodo === "view all employees") {
     console.log(answer.whattodo)
     db.query(`SELECT * FROM employee`, (err, result) => {
       console.table(result)
-      start()
+      start();
     })
     
   }
